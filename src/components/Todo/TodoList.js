@@ -69,6 +69,8 @@ export default function TodoList() {
 			saveChanges(id, value);
 			return;
 		}
+		if (todos.some(el => el.onEdit))
+			return
 		setTodos(
 			todos.map((el) => {
 				if (el.id === id) el.onEdit = true;
