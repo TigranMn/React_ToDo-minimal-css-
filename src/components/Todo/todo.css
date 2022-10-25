@@ -1,0 +1,34 @@
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper > form > button {
+    margin-left: 10px;
+}
+
+button {
+    border: 2px inset greenyellow   ;
+    color: green;
+}
+.todoItem{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.todoItem > button {
+    margin-left: 10px;
+}
+.todoItem > span {
+    cursor: pointer;
+    min-width: 163px;
+}
+
+.itemCheckbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-bottom: 4px;
+}
