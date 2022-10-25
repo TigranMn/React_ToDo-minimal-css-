@@ -9,16 +9,16 @@ export default function TodoItem(props) {
 		return (
 			<div key={el.id} className="todoItem">
 				<input 
-                        onClick={() => handleSelect(el.id)} 
-                        className="itemCheckbox" 
-                        type={"checkbox"} 
-                        id={el.id}>
+                  onClick={() => handleSelect(el.id)} 
+                  className="itemCheckbox" 
+                  type={"checkbox"} 
+                  id={el.id}>
                 </input>
 				{el.onEdit ? (
 				<input 
-                        onChange={(e) => setValue(e.target.value)} 
-                        type={"text"} 
-                        defaultValue={el.value}></input>
+                  onChange={(e) => setValue(e.target.value)} 
+                  type={"text"} 
+                  defaultValue={el.value}></input>
 				) : (
 				<span onClick={() => {markDone(el.id)}}> 
                     {el.isDone ? <del>{el.value}</del> : el.value } 

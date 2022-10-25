@@ -6,8 +6,7 @@ import "./todo.css";
 export default function TodoList() {
 	const [todos, setTodos] = useState([]);
 	const taskInput = useRef();
-	const [currentInput, setCurrentInput] = useState("");
-
+	
 	const handleAdd = (e) => {
 		let value = taskInput.current.value;
 		e.preventDefault();
